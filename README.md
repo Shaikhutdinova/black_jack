@@ -1,16 +1,14 @@
-# black_jack
+# Blackjack app
 
-A new Flutter project.
+The goal of the game is to score more points than the dealer, but not more than 21. If you have more points than 21,
+then your score is highlighted in red and you lose.
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Project structure
+1. **main.dart** for run app with ThemeData and home page BlackJackScreen().
+2. **black_jack_screen.dart** contains Stateful Widget with application logic and visual design.
+   - There is a list of cards, dealer's and player's cards in *changeCards* method that sets the first two cards
+   for players.
+   - The *addCard* method allows the player to add one card to the game.
+3. **cards_grid_view.dart** contains StatelessWidget widget that places the player's and dealer's cards in a grid
+   of 3 in a row.
+4. **my_button.dart** - button for "Start game", "Another card" and "Next Round".
